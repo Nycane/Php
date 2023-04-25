@@ -1,0 +1,339 @@
+<link rel="stylesheet" href="../Css.css">
+    
+
+    <!-- header -->
+   
+    <!-- header -->
+
+    <!-- CHitietsanpham -->
+<script>
+    document.getElementById('')
+</script>
+    <div class="container mb-5 mt-5 ">
+        <div class="row"  ng-repeat="i in arr">
+            <div class="col-12 col-md-6 col-lg-6">
+                <img src="../Anh/{{i.img}}"  width="100%"
+                    alt="">
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="product-content">
+                    <h3 class="product-title">{{i.name}}</h3>
+                    <h5>Id:{{i.id}}</h5>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <p>Chất vải Canvas mềm nhẹ, thoáng khí, ít thấm nước
+                        Thiết kế cổ thấp gọn gàng, đơn giản, dễ mang
+                        Màu sắc trắng - đen cơ bản dễ phối đồ, đa dạng phong cách
+                        Khoen tròn được làm bằng kim loại cao cấp, chống rỉ sét
+                        Đế cao su bền chắc, có độ bám tốt</p>
+                </div>
+                <div class="product-price">
+                    <p class="new-price text-danger" style="font-size: 25px;font-weight: 600;">{{i.price|vndFilter}}</p>
+                </div>
+                <div class="form-cart d-flex">
+                    <a href="#!Thanhtoan" ng-click="add(i)"   type="button" class="btn btn-primary mr-2 ">
+                        Mua ngay <i class="fa fa-shopping-cart"></i>
+                    </a>
+                    <button type="number" ng-click="add(i)" class="btn btn-danger mr-2">Thêm vào giỏ
+                        hàng</button>
+                </div>
+                <!-- collaspe -->
+                <div id="accordion" class="mt-5 ">
+                    <div class="card">
+                        <div class="card-header bg-white" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link text-dark" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    Tính Năng Sản Phẩm
+                                </button>
+                                <i class="fa fa-chevron-down"></i>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse"  aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                Chất liệu vải Canvas cao cấp, bền nhẹ, giúp đôi giày giữ được form dáng chuẩn
+                                Thiết kế cổ cao với lưỡi gà và gót sau cao hơn các thiết kế cũ, đạt được sự thoải mái
+                                mỗi khi bạn chuyển động
+                                Đế giày cao hơn, màu trắng ngà và được phủ bóng. Đặc biệt, phần đế giữa được thiết kế
+                                tách rời, tạo nên sự độc đáo đầy bắt mắt
+                                Phần logo và lỗ thoát khí tại phần thân được chắp vá được phóng đại hơn các chi tiết
+                                khác
+                                Đường foxing đen đặc trưng cũng trở nên dày dặn hơn
+                                Logo sau gót giày vẫn giữ nguyên như các thiết kế của dòng 1970s trước đây
+                                Đệm chân OrthoLite và đế PU giúp những bước đi thêm phần thoải mái và tự tin hơn
+                                Đường kim mũi chỉ tỉ mỉ và chi tiết hơn
+                                Khoen xỏ lỗ giày và khoen bên hông giày được làm từ kim loại cao cấp chống rỉ sét
+                                Dây giày được thiết kế lại với màu ngà trùng với đế giày có độ thanh mảnh
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header  bg-white" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Đa dạng phong cách với {{i.name}}
+
+                                </button>
+                                <i class="fa fa-chevron-down"></i>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>Có thể thấy, cả hai dòng {{i.name}} đều được các bạn trẻ ưa chuộng bởi sự
+                                    đơn giản, thời trang, đặc biệt không kén người mang.
+
+                                    Nếu phiên bản Chuck Classic cổ cao vẫn giữ được nét độc đáo đặc trưng của thương
+                                    hiệu, mang đến cho người mang một phong cách mới. Thì phiên bản cổ thấp lại đảm bảo
+                                    sự đơn giản, phổ biến hơn vì chúng dễ đi, dễ kết hợp quần áo.
+
+                                    Không ít các tín đồ thời trang hiện nay đã nhanh chóng sở hữu cho mình item “huyền
+                                    thoại” này với sự đột phá về phong cách thời trang.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header bg-white" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                   {{i.name}} “vừa tay tầm túi”
+                                </button>
+                                <i class="fa fa-chevron-down"></i>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                Có thể nói, so với mặt bằng chung, mức giá cho một đôi{{i.name}} chính hãng
+                                vẫn là chi phí hợp lý cho những ai yêu thích thời trang. Đặc biệt là mong muốn cho được
+                                một đôi giày đúng với xu hướng và có được độ bền bỉ nhất định. Hiện tại mức giá của
+                                {{i.name}} dao động từ 1.200.000 đồng đến 1.600.000 đồng tùy vào phiên bản
+                                và chất liệu bạn chọn.Một nguyên lý khi sử dụng giày Converse được mọi người truyền tai
+                                nhau: “Giày Converse khi bẩn còn đẹp hơn khi sạch và càng được sử dụng nhiều càng lên
+                                mã. Đó là chưa kể nó bền đến mức tưởng như không bao giờ bị hỏng”.
+                                {{i.name}} màu trắng nếu bám bẩn vẫn không vấn đề gì!
+
+                                Với xu hướng giày Converse cực chất như hiện nay, đặc biệt là dễ sử dụng và phù hợp với
+                                mọi nơi, mọi phong cách. Bạn còn chần chừ gì mà không liên hệ với Drake để được tư vấn
+                                và chọn size ngay hôm nay?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- collaspe -->
+
+            </div>
+        </div>
+    </div>
+    <!-- dangiasanpham -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12 fl-left">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" data-target="#nav-home"
+                            role="tab" aria-controls="nav-home" aria-selected="true">Đánh Giá Sản Phẩm</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile"
+                            role="tab" aria-controls="nav-profile" aria-selected="false">Mô Tả</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <!--  -->
+                                    <h5 class="mt-4">Đánh giá của khách hàng</h5>
+                                    <div class="user-review">
+                                        <div class="row mt-3">
+                                            <div class="col-2">
+                                                <img src="../Anh/avatar-facebook-doc-1.jpg" alt="">
+                                            </div>
+                                            <div class="col-10">
+                                                <p class="text-primary m-0  mb-1" style="font-weight:500;">Nguyễn Công
+                                                    Xuân Hùng</p>
+                                                <p class="m-0  mb-1">Giày đẹp nhưng không có tiền mua 💚💛🧡</p>
+                                                <p> <a class="review mr-4" href="">Thích</a> <a class="review"
+                                                        href="">Phản Hồi</a> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-review">
+                                        <div class="row mt-3">
+
+                                            <div class="col-2">
+                                                <img src="../Anh/anh-avatar-dep-ngau-hinh-dai-dien.jpg" alt="">
+                                            </div>
+                                            <div class="col-10">
+                                                <p class="text-primary m-0  mb-1" style="font-weight:500;">Nguyễn Công
+                                                    Xuân Hùng</p>
+                                                <p class="m-0  mb-1">Giày đẹp nhưng không có tiền mua 😍😍😍</p>
+                                                <p> <a class="review mr-4" href="">Thích</a> <a class="review"
+                                                        href="">Phản Hồi</a> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-review">
+                                        <div class="row mt-3">
+
+                                            <div class="col-2">
+                                                <img src="../Anh/Anh-gai-dep-facebook-lam-anh-dai-dien (17).jpg" alt="">
+                                            </div>
+                                            <div class="col-10">
+                                                <p class="text-primary m-0 mb-1" style="font-weight:500;">Nguyễn Công
+                                                    Xuân Hùng</p>
+                                                <p class="m-0 mb-1">Giày đẹp nhưng không có tiền mua 😁😁😀</p>
+                                                <p> <a class="review mr-4" href="">Thích</a> <a class="review"
+                                                        href="">Phản Hồi</a> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-review">
+                                        <div class="row mt-3">
+
+                                            <div class="col-2">
+                                                <img src="../Anh/anh-gai-xinh-deo-kinh-toc-ngan-2k4-3.jpg" alt="">
+                                            </div>
+                                            <div class="col-10">
+                                                <p class="text-primary m-0  mb-1" style="font-weight:500;">Nguyễn Công
+                                                    Xuân Hùng</p>
+                                                <p class="m-0  mb-1">Giày đẹp nhưng không có tiền mua 🧡💙💜💜💚</p>
+                                                <p> <a class="review mr-4" href="">Thích</a> <a class="review"
+                                                        href="">Phản Hồi</a> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--  -->
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <!--  -->
+                                    <h4>Thêm Đánh Giá</h4>
+                                    <form class="form">
+                                        <div class="form-row">
+                                            <div class="col-12">
+                                                <p>Đánh Giá</p>
+                                                <div class="rate">
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <p class="mt-5 mb-0">Thông Tin Của Bạn</p>
+                                                <div class="row">
+                                                    <div class="form-group col-md-6">
+                                                        <label for="inputEmail4"></label>
+                                                        <input type="email" class="form-control" id="inputEmail4"
+                                                            placeholder="Họ Tên">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="inputPassword4"></label>
+                                                        <input type="password" class="form-control" id="inputPassword4"
+                                                            placeholder="Email">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputAddress"></label>
+
+                                            <textarea class="w-100" name="" id="" cols="30" rows="10"
+                                                placeholder="Đánh Giá..."></textarea>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-danger">Gửi đi</button>
+                                        </div>
+                                    </form>
+                                    <!--  -->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <h5 class="ml-2 mt-3">Thông Tin Sản Phẩm</h5>
+                        <table class="w-100 mt-2">
+                          
+                            <tr class="w-100">
+                                <td class="p-2" style="width: 50%;">
+                                    Thương hiệu
+                                </td>
+                                <td class="p-2" style="width: 50%;">
+                                    Converse
+                                </td>
+                            </tr>
+                            <tr class="w-100">
+                                <td class="p-2" style="width: 50%;">
+                                    Xuất xứ thương hiệu
+                                </td>
+                                <td class="p-2" style="width: 50%;">
+                                    Mỹ
+                                </td>
+                            </tr>
+                            <tr class="w-100">
+                                <td class="p-2" style="width: 50%;">
+                                    Sản xuất tại
+                                </td>
+                                <td class="p-2" style="width: 50%;">
+                                    Việt Nam
+                                </td>
+                            </tr>
+                            <tr class="w-100">
+                                <td class="p-2" style="width: 50%;">
+                                    SKU
+                                </td>
+                                <td class="p-2" style="width: 50%;">
+                                    Vải Canvas
+                                </td>
+                            </tr>
+                            <tr class="w-100">
+                                <td class="p-2" style="width: 50%;">
+                                    Hướng dẫn bảo quản
+                                </td>
+                                <td class="p-2" style="width: 50%;">
+                                    Tránh mang sản phẩm khi trời mưa hoặc thời tiết xấu để chúng không bị ướt dẫn đến bong tróc.<br>
+                                    Cất giữ sản phẩm ở nơi thoáng mát để giữ gìn chất lượng của sản phẩm ở mức tốt nhất.<br>
+                                    Lau chùi sản phẩm thường xuyên để tránh bụi.
+                                </td>
+                            </tr>
+                            <tr class="w-100">
+                                <td class="p-2" style="width: 50%;">
+                                    Chế độ bảo hành
+                                </td>
+                                <td class="p-2" style="width: 50%;">
+                                    Bảo hành chính hãng 1 tháng theo phiếu bảo hành
+                                </td>
+                            </tr>
+                            <tr class="w-100">
+                                <td class="p-2" style="width: 50%;">
+                                    Quy cách đóng gói
+                                </td>
+                                <td class="p-2" style="width: 50%;">
+                                    Giày<br>
+                                    Hộp giày<br>
+                                    Túi đựng Converse<br>
+                                    Phiếu bảo hành chính hãng<br>
+                                </td>
+                            </tr>                                                                 
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- dangiasanpham -->
+
+
+
+    <!-- CHitietsanpham -->
+
+   
